@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./Assets/stylesheet/normalize.css">
+    <link rel="stylesheet" href="./Assets/stylesheet/style.css">
+    <title>Hangman</title>
+</head>
+
+<body>
+    <H1>JEU DU PENDU</H1>
+    <div class="page">
+        <div class="img">
+            <img name="pendu" class="pendu" src="Assets/Img/Pendu_1.jpg">
+        </div>
+        <div class="entry">
+            <table id="clavier">
+                <tr>
+                    <td class="button" onclick="proposer(this);">A</td>
+                    <td class="button" onclick="proposer(this);">B</td>
+                    <td class="button" onclick="proposer(this);">C</td>
+                    <td class="button" onclick="proposer(this);">D</td>
+                    <td class="button" onclick="proposer(this);">E</td>
+                    <td class="button" onclick="proposer(this);">F</td>
+                    <td class="button" onclick="proposer(this);">G</td>
+                    <td class="button" onclick="proposer(this);">H</td>
+                    <td class="button" onclick="proposer(this);">I</td>
+                    <td class="button" onclick="proposer(this);">J</td>
+                </tr>
+                <tr>
+                    <td class="button" onclick="proposer(this);">K</td>
+                    <td class="button" onclick="proposer(this);">L</td>
+                    <td class="button" onclick="proposer(this);">M</td>
+                    <td class="button" onclick="proposer(this);">N</td>
+                    <td class="button" onclick="proposer(this);">O</td>
+                    <td class="button" onclick="proposer(this);">P</td>
+                    <td class="button" onclick="proposer(this);">Q</td>
+                    <td class="button" onclick="proposer(this);">R</td>
+                    <td class="button" onclick="proposer(this);">S</td>
+                    <td class="button" onclick="proposer(this);">T</td>
+                </tr>
+                <tr>
+                    <td class="button" onclick="proposer(this);">U</td>
+                    <td class="button" onclick="proposer(this);">V</td>
+                    <td class="button" onclick="proposer(this);">W</td>
+                    <td class="button" onclick="proposer(this);">X</td>
+                    <td class="button" onclick="proposer(this);">Y</td>
+                    <td class="button" onclick="proposer(this);">Z</td>
+                </tr>
+            </table>
+            <a href="./index.html">Nouvelle partie</a>
+            <div class="mot">
+                <tr>
+                    <p id="tst"></p>
+                </tr>
+            </div>
+            <div>
+                <caption>
+                    <h2>Lettres utilisées</h2>
+                </caption>
+                <tr>
+                    <th>
+                    <td></td>
+                    </th>
+                </tr>
+            </div>
+        </div>
+    </div>
+    <script src="./Assets/scripts/index.js"></script>
+</body>
+</html>

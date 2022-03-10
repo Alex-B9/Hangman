@@ -1,0 +1,80 @@
+@import url(./normalize.css);
+body {
+  height: 100%;
+  width: 100%;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(10%, #001c1e), color-stop(41%, #042e31), color-stop(58%, #055055), color-stop(85%, #0d7d84));
+  background: linear-gradient(180deg, #001c1e 10%, #042e31 41%, #055055 58%, #0d7d84 85%);
+}
+
+body h1 {
+  text-align: center;
+}
+
+.page {
+  background-color: #6200ff;
+  border: 1px solid black;
+  width: 60%;
+  padding: 30px;
+  height: 450px;
+}
+
+.page h1 {
+  font-size: 30px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.page img.pendu {
+  float: right;
+}
+
+.page h2 {
+  font-size: 16px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.page .mot {
+  margin: 30px 0 0 0;
+  clear: both;
+  top: 110px;
+}
+
+.page .mot td {
+  padding: 10px;
+  background-color: #2EFE2E;
+  border: 2px inset black;
+  width: 30px;
+  font-weight: bold;
+  font-size: 1.5em;
+  text-align: center;
+}
+
+#clavier {
+  border: 5px outset black;
+  padding: 20px;
+  background-color: #8a0808;
+  width: 300px;
+}
+
+td {
+  background-color: #8d8dc9;
+  border: 2px solid black;
+  width: 35px;
+  height: 25px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 50px;
+  cursor: pointer;
+}
+
+a {
+  color: red;
+  text-decoration: none;
+  font-size: 30px;
+}
+
+a a:hover {
+  color: green;
+  font-weight: bold;
+  text-decoration: underline;
+}
+/*# sourceMappingURL=style.css.map */
