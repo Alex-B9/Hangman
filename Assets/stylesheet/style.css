@@ -1,80 +1,150 @@
 @import url(./normalize.css);
+html {
+  height: 100vh;
+}
+
 body {
-  height: 100%;
+  background: #22223b;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(18%, #22223b), color-stop(50%, #4a4e69), color-stop(83%, #9a8c98), to(#f2e9e4));
+  background: linear-gradient(180deg, #22223b 18%, #4a4e69 50%, #9a8c98 83%, #f2e9e4 100%);
+  height: 100vh;
+}
+
+.container {
+  height: 95.5%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.container h1 {
+  margin: 35px 35px 35px 35px;
+  font-size: 35px;
+  color: #8B808F;
+}
+
+.container .topleft {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 20px;
+  color: #BBBBBB;
+}
+
+.img_txt {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 1%;
+}
+
+.img_txt .img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 50%;
+  -webkit-filter: invert(100%);
+          filter: invert(100%);
+}
+
+.img_txt #img {
   width: 100%;
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(10%, #001c1e), color-stop(41%, #042e31), color-stop(58%, #055055), color-stop(85%, #0d7d84));
-  background: linear-gradient(180deg, #001c1e 10%, #042e31 41%, #055055 58%, #0d7d84 85%);
 }
 
-body h1 {
+.img_txt .wird {
+  font-size: 25px;
+  color: #BBBBBB;
+}
+
+.text-center {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   text-align: center;
 }
 
-.page {
-  background-color: #6200ff;
-  border: 1px solid black;
-  width: 60%;
-  padding: 30px;
-  height: 450px;
+.text-center .keyboard {
+  margin: 30px 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 5px;
 }
 
-.page h1 {
-  font-size: 30px;
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-.page img.pendu {
-  float: right;
-}
-
-.page h2 {
-  font-size: 16px;
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-.page .mot {
-  margin: 30px 0 0 0;
-  clear: both;
-  top: 110px;
-}
-
-.page .mot td {
-  padding: 10px;
-  background-color: #2EFE2E;
-  border: 2px inset black;
-  width: 30px;
-  font-weight: bold;
-  font-size: 1.5em;
-  text-align: center;
-}
-
-#clavier {
-  border: 5px outset black;
-  padding: 20px;
-  background-color: #8a0808;
-  width: 300px;
-}
-
-td {
-  background-color: #8d8dc9;
-  border: 2px solid black;
+.text-center .keyboard .btn {
   width: 35px;
-  height: 25px;
+  height: 35px;
+  background-color: #2C5776;
+  color: #fff;
+}
+
+.text-center .keyboard .btnonclick {
+  background-color: #4C4476;
+}
+
+.bttn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.bttn .btn-info {
+  margin-bottom: 30px;
+  padding: 10px 10px;
+  font-size: 25px;
+  color: #fff;
+  background-image: -webkit-gradient(linear, left top, right top, from(#2b5876), color-stop(51%, #4e4376), to(#2b5876));
+  background-image: linear-gradient(to right, #2b5876 0%, #4e4376 51%, #2b5876 100%);
   text-align: center;
-  font-weight: bold;
-  font-size: 50px;
-  cursor: pointer;
+  background-size: 200% auto;
+  border-radius: 10px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
-a {
-  color: red;
+.bttn .btn-info:hover {
+  -webkit-box-shadow: 0 0 20px #22223B;
+          box-shadow: 0 0 20px #22223B;
+  background-position: right center;
+  color: #fff;
   text-decoration: none;
-  font-size: 30px;
 }
 
-a a:hover {
-  color: green;
-  font-weight: bold;
-  text-decoration: underline;
+footer .footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+footer .footer .nom a {
+  text-decoration: none;
+  color: black;
+}
+
+footer .footer .nom a:visited {
+  color: black;
+}
+
+footer .footer .nom a:hover {
+  font-size: 25px;
 }
 /*# sourceMappingURL=style.css.map */

@@ -1,73 +1,131 @@
 @import url(./normalize.css);
 
+html{
+    height: 100vh;
+}
 body{
-    height: 100%;
-    width: 100%;
-
-    background: linear-gradient(180deg, rgba(0,28,30,1) 10%, rgba(4,46,49,1) 41%, rgba(5,80,85,1) 58%, rgba(13,125,132,1) 85%);;
-
+    background: rgb(34,34,59);
+    background: linear-gradient(180deg, rgba(34,34,59,1) 18%, rgba(74,78,105,1) 50%, rgba(154,140,152,1) 83%, rgba(242,233,228,1) 100%);
+    // background-repeat: no-repeat;
+        // width: 100%;
+    height: 100vh;
+}
+.container{
+    height: 95.5%;
+    display: flex;
+    flex-direction: column;
     h1{
-        text-align: center;
+        margin: 35px 35px 35px 35px;
+        font-size: 35px;
+        color: #8B808F;
+    }
+    .topleft{
+        position: absolute;
+        top: 0;
+        left: 0;
+        
+        font-size: 20px;
+        color: #BBBBBB;
     }
 }
-.page{
-    background-color: #6200ff;
-    border: 1px solid black;
-    width: 60%;
-    padding: 30px;
-    height: 450px;
-    h1{
-        font-size:30px;
-        font-family: Arial, Helvetica, sans-serif;
+.img_txt{
+    display: flex;
+    gap:1%;
+
+    .img{
+        display: flex;
+        width: 50%;
+        filter: invert(100%);
+        
     }
-    img.pendu{
-        float: right;
+    #img{
+        width: 100%;
     }
-    h2{
-        font-size:16px;
-        font-family: Arial, Helvetica, sans-serif;
-    }
-    .mot{
-        margin: 30px 0 0 0;
-        clear: both;
-        top:110px;
+    .wird{
+        
+        font-size: 25px;
+        color: #BBBBBB;
+        // justify-content: flex-end;
+        // width: 350px;
+        // height: 100px;
     
-        td{
-            padding: 10px;
-            background-color: #2EFE2E;
-            border: 2px inset black;
-            width:30px;
-            font-weight: bold;
-            font-size: 1.5em;
-            text-align: center
+        
+        // padding-top: 25px;
+        // padding-left: 25px;
+    }
+}
+    .text-center{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    // img{
+    //     margin: 0;
+    //     width: 50%;
+    //     // height: 60%;
+    // }
+
+    .keyboard{
+        margin: 30px 40px;
+        // width: 250px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 5px;
+        .btn{
+            width: 35px;
+            height: 35px;
+
+            background-color: #2C5776;
+            color: #fff;
+            &onclick{
+                background-color: #4C4476;
+            }
         }
     }
-};
-#clavier{
-border: 5px outset black;
-    padding: 20px;
-    background-color: #8a0808;
-    width: 300px;
-
 }
-td{
-    background-color: rgb(141, 141, 201);
-    border: 2px solid black;
-    width: 35px;
-    height: 25px;
-    text-align: center;
-    font-weight: bold;
-    font-size: 50px;
-    cursor : pointer;
-}
-a{
-    color: red;
-    text-decoration: none;
-    font-size: 30px;
+.bttn {
+    display: flex;
+    justify-content: center;
+    .btn-info{
+        margin-bottom: 30px;
+        padding: 10px 10px;
 
-    a:hover{
-        color: green;
-        font-weight: bold;
-        text-decoration: underline;
-    };
-};
+        font-size: 25px;
+        color: #fff;
+        background-image: linear-gradient(to right, #2b5876 0%, #4e4376  51%, #2b5876  100%);
+
+        text-align: center;
+        background-size: 200% auto;
+        border-radius: 10px;
+        transition: 0.5s;
+        
+        &:hover {
+            box-shadow: 0 0 20px #22223B;
+            background-position: right center; 
+          color: #fff;
+          text-decoration: none;
+        }
+    }
+}
+footer{
+    // height: 5vh;
+    // background-color: #E8DFDC;
+    .footer{
+        display: flex;
+        justify-content: space-evenly;
+        
+        // flex-direction: row;
+        .nom{
+            a{
+                text-decoration: none;
+                color: black;
+                &:visited{
+                    color: black;
+                };
+                &:hover{
+                    font-size: 25px;
+                }
+            }
+        }
+    }
+}
