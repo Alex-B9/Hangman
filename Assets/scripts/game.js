@@ -42,7 +42,7 @@ function newButtons() {
   // création d'une variable pour la création des touches
   // split sépare les caractères
   // map permet de retrouver des éléments dans leurs ordre d'insértions
-  let buttonsHTML = 'abcdefghijklmnopqrstuvwxyz'.split('').map(letter =>
+  let buttonsHTML = 'azertyuiopqsdfghjklmwxcvbn'.split('').map(letter =>
       // Permet d'insérer les caractères ci-dessus et de les stylisés via bootstrap
     `
       <button
@@ -81,7 +81,7 @@ function handleGuess(chosenLetter) {
 
 // Fonction qui permet de sauter d'images à chaque erreur
 function updateImg() {
-  document.getElementById('img').src = '/Assets/Images/pendu_' + counterImg + '.png';
+  document.getElementById('img').src = '../Hangman/Assets/Images/pendu_' + counterImg + '.png';
 }
 // Fonction qui vérifie si la partie est gagnée
 function checkIfGameWon() {
@@ -114,7 +114,7 @@ function reset() {
   counterImg=1;
   error = 0;
   guessed = [];
-  document.getElementById('img').src = '/Assets/Images/pendu_1.png';
+  document.getElementById('img').src = '../Hangman/Assets/Images/pendu_1.png';
 
   randomWord();
   guessedWord();
