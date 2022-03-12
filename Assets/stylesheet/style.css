@@ -150,4 +150,18 @@ footer .footer .nom a:visited {
 footer .footer .nom a:hover {
   font-size: 25px;
 }
+
+@media screen and (min-width: 1024px) {
+  .text-center {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .keyboard {
+    width: 20%;
+  }
+}
 /*# sourceMappingURL=style.css.map */
