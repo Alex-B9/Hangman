@@ -12,10 +12,7 @@
 
 <body>
   <div class="container">
-    <h1 class="text-center">Welcome to the amazing game of the Hangman !</h1>
-    <div class="topleft">
-      Error: <span id='error'>0</span> of <span id='maxError'></span>
-    </div>
+    <h1>Welcome to the amazing game of the Hangman !</h1>
     <div class="text-center">
       <div class="img_txt">
         <div class="img">
@@ -26,24 +23,28 @@
           <p id="secretWord"></p>
         </div>
       </div>
-      <div class='keyboard' id="keyboard"></div>
+      <div class="topleft">
+        Error: <span id='error'>0</span> of <span id='maxError'></span>
+      </div>
+      <div class="btn-block">
+        <div class='keyboard' id="keyboard"></div>
+      </div>
       <div class="bttn">
         <button class="btn btn-info" onClick="reset()">Do you want to lose again ?</button>
       </div>
     </div>
   </div>
-  <footer>
     <div class="footer">
       <div class="social">
-        <a href="https://github.com/Alex-B9"><img src="./Assets/Images/GitHub.svg" alt=""></a>
-        <a href="https://www.linkedin.com/in/alex-baes-dev/"><img src="./Assets/Images/Linkedin.svg" alt=""></a>
+        <a href="https://github.com/Alex-B9" target="_blank"><img src="./Assets/Images/GitHub.svg" alt=""></a>
+        <a href="https://www.linkedin.com/in/alex-baes-dev/" target="_blank"><img src="./Assets/Images/Linkedin.svg" alt=""></a>
       </div>
       <div class="nom">
-        Made by <a href="https://www.linkedin.com/in/alex-baes-dev/">Alex_B.</a>
+        Made by <a href="https://www.linkedin.com/in/alex-baes-dev/" target="_blank">Alex_B.</a>
       </div>
     </div>
-  </footer>
-  <script src='../Hangman/Assets/scripts/game.js'></script>
+  <script src='/Assets/scripts/game.js'></script>
+  <!-- <script src='../Hangman/Assets/scripts/game.js'></script> -->
 </body>
 
 </html>

@@ -10,39 +10,40 @@ body{
     height: 100vh;
 }
 .container{
-    height: 95.5%;
+    height: 96%;
     display: flex;
     flex-direction: column;
+    // justify-content: space-evenly;
+
     h1{
-        margin: 35px 35px 35px 35px;
+        margin: 10px 35px;
         font-size: 35px;
         color: #8B808F;
+        text-align: center;
     }
     .topleft{
-        position: absolute;
-        top: 0;
-        left: 0;
-        
+
         font-size: 20px;
         color: #BBBBBB;
     }
 }
 .img_txt{
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     gap:1%;
+    // margin: auto 10px;
+    height: 35%;
 
     .img{
         display: flex;
-        max-height: 450px;
+        // max-height: 450px;
         filter: invert(100%);
-        
     }
-    #img{
-        width: 100%;
-    }
+    // #img{
+    //     // height: 70%;
+    //     // width: 100%;
+    // }
     .wird{
-        
         font-size: 25px;
         color: #BBBBBB;
     }
@@ -51,13 +52,21 @@ body{
     display: flex;
     flex-direction: column;
     text-align: center;
-
+    // justify-content: center;
+    .btn-block{
+        display: flex;
+        justify-content: center;
+        // flex-wrap: wrap;
+    }
     .keyboard{
         margin: 30px 40px;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 5px;
+        // display: flex;
+        // flex-wrap: wrap;
+            // justify-content: center;
+            // align-items: center;
+        // gap: 5px;
+        max-width: 390px;
+
         .btn{
             width: 35px;
             height: 35px;
@@ -74,7 +83,7 @@ body{
     display: flex;
     justify-content: center;
     .btn-info{
-        margin-bottom: 30px;
+        // margin-bottom: 30px;
         padding: 10px 10px;
 
         font-size: 25px;
@@ -94,31 +103,98 @@ body{
         }
     }
 }
-footer{
-    .footer{
-        display: flex;
-        justify-content: space-evenly;
-        
-        .nom{
-            a{
-                text-decoration: none;
+.footer{
+    display: flex;
+    justify-content: space-evenly;
+    .social{
+        :hover{
+            width: 35px;
+        }
+    }
+    
+    .nom{
+        font-weight: 700;
+        a{
+            text-decoration: none;
+            color: black;
+            &:visited{
                 color: black;
-                &:visited{
-                    color: black;
-                };
-                &:hover{
-                    font-size: 25px;
-                }
+            };
+            &:hover{
+                font-size: 25px;
             }
         }
     }
 }
-@media screen and (min-width: 1024px){
+// Tablet version
+@media screen and (min-width: 786px) and (max-width: 1023px){
+    .container{
+        h1{
+            margin: 65px auto;
+            font-size: 50px;
+        }
+    }
     .text-center{
         display: flex;
         justify-content: center;
+        .topleft{
+            margin: 30px auto;
+        }
     }
-    .keyboard{
-        width: 20%;
+    .btn-block{
+        display: flex;
+        justify-content: center;
+        // max-width: 545px;
+        .keyboard{
+            margin: 50px auto 70px auto;
+
+            max-width: 545px;
+            // max-height: 600px;
+
+            line-height: 50px;
+            .btn{
+                height: 45px;
+                width: 45px;
+            }
+        }
+    }
+    .img_txt{
+        height: 100%;
+    }
+}
+// Desktop version
+@media screen and (min-width: 1024px){
+    .container{
+        h1{
+            margin: 65px auto;
+            font-size: 70px;
+        }
+    }
+    .text-center{
+        display: flex;
+        justify-content: center;
+        .topleft{
+            margin: 30px auto;
+        }
+    }
+    .btn-block{
+        display: flex;
+        justify-content: center;
+        // max-width: 545px;
+        .keyboard{
+            margin: 50px auto 70px auto;
+
+            max-width: 545px;
+            // max-height: 600px;
+
+            line-height: 50px;
+            .btn{
+                height: 45px;
+                width: 45px;
+            }
+        }
+    }
+    .img_txt{
+        height: 100%;
     }
 }

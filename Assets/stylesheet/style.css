@@ -11,7 +11,7 @@ body {
 }
 
 .container {
-  height: 95.5%;
+  height: 96%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -22,15 +22,13 @@ body {
 }
 
 .container h1 {
-  margin: 35px 35px 35px 35px;
+  margin: 10px 35px;
   font-size: 35px;
   color: #8B808F;
+  text-align: center;
 }
 
 .container .topleft {
-  position: absolute;
-  top: 0;
-  left: 0;
   font-size: 20px;
   color: #BBBBBB;
 }
@@ -39,23 +37,19 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
   gap: 1%;
+  height: 35%;
 }
 
 .img_txt .img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  max-height: 450px;
   -webkit-filter: invert(100%);
           filter: invert(100%);
-}
-
-.img_txt #img {
-  width: 100%;
 }
 
 .img_txt .wird {
@@ -74,17 +68,18 @@ body {
   text-align: center;
 }
 
-.text-center .keyboard {
-  margin: 30px 40px;
+.text-center .btn-block {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  gap: 5px;
+}
+
+.text-center .keyboard {
+  margin: 30px 40px;
+  max-width: 390px;
 }
 
 .text-center .keyboard .btn {
@@ -108,7 +103,6 @@ body {
 }
 
 .bttn .btn-info {
-  margin-bottom: 30px;
   padding: 10px 10px;
   font-size: 25px;
   color: #fff;
@@ -129,7 +123,7 @@ body {
   text-decoration: none;
 }
 
-footer .footer {
+.footer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -138,20 +132,32 @@ footer .footer {
           justify-content: space-evenly;
 }
 
-footer .footer .nom a {
+.footer .social :hover {
+  width: 35px;
+}
+
+.footer .nom {
+  font-weight: 700;
+}
+
+.footer .nom a {
   text-decoration: none;
   color: black;
 }
 
-footer .footer .nom a:visited {
+.footer .nom a:visited {
   color: black;
 }
 
-footer .footer .nom a:hover {
+.footer .nom a:hover {
   font-size: 25px;
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 786px) and (max-width: 1023px) {
+  .container h1 {
+    margin: 65px auto;
+    font-size: 50px;
+  }
   .text-center {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -160,8 +166,66 @@ footer .footer .nom a:hover {
         -ms-flex-pack: center;
             justify-content: center;
   }
-  .keyboard {
-    width: 20%;
+  .text-center .topleft {
+    margin: 30px auto;
+  }
+  .btn-block {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .btn-block .keyboard {
+    margin: 50px auto 70px auto;
+    max-width: 545px;
+    line-height: 50px;
+  }
+  .btn-block .keyboard .btn {
+    height: 45px;
+    width: 45px;
+  }
+  .img_txt {
+    height: 100%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .container h1 {
+    margin: 65px auto;
+    font-size: 70px;
+  }
+  .text-center {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .text-center .topleft {
+    margin: 30px auto;
+  }
+  .btn-block {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .btn-block .keyboard {
+    margin: 50px auto 70px auto;
+    max-width: 545px;
+    line-height: 50px;
+  }
+  .btn-block .keyboard .btn {
+    height: 45px;
+    width: 45px;
+  }
+  .img_txt {
+    height: 100%;
   }
 }
 /*# sourceMappingURL=style.css.map */
