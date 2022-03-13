@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Hangman">
   <link rel="stylesheet" href="./Assets/stylesheet/normalize.css">
   <link rel="stylesheet" href="./Assets/stylesheet/style.css">
   <title>Hangman</title>
@@ -20,7 +21,7 @@
         </div>
         <div class="wird">
           <p>Guess the word if you can</p>
-          <p id="secretWord"></p>
+          <p id="secretWord" onkeydown="test"></p>
         </div>
       </div>
       <div class="topleft">
@@ -37,11 +38,11 @@
   <footer>
     <div class="footer">
       <div class="social">
-        <a href="https://github.com/Alex-B9" target="_blank"><img src="./Assets/Images/GitHub.svg" alt=""></a>
-        <a href="https://www.linkedin.com/in/alex-baes-dev/" target="_blank"><img src="./Assets/Images/Linkedin.svg" alt=""></a>
+        <a href="https://github.com/Alex-B9" aria-label="Github" target="_blank"><img src="./Assets/Images/GitHub.svg" alt=""></a>
+        <a href="https://www.linkedin.com/in/alex-baes-dev/" aria-label="Linkedin" target="_blank"><img src="./Assets/Images/Linkedin.svg" alt=""></a>
       </div>
       <div class="nom">
-        Made by <a href="https://www.linkedin.com/in/alex-baes-dev/" target="_blank">Alex_B.</a>
+        Made by <a href="https://www.linkedin.com/in/alex-baes-dev/" aria-label="Linkedin" target="_blank">Alex_B.</a>
       </div>
     </div>
   </footer>

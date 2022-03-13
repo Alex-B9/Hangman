@@ -37,26 +37,40 @@ let wordStatus = null; // variable qui check le statu du mot pour la conditions 
           console.log(answer);
         }
         // Math.floor(Math.random()*data.data.lenght)
-// Création des touches du claviers
-function newButtons() {
-  // création d'une variable pour la création des touches
-  // split sépare les caractères
-  // map permet de retrouver des éléments dans leurs ordre d'insértions
-  let buttonsHTML = 'azertyuiopqsdfghjklmwxcvbn'.split('').map(letter =>
-      // Permet d'insérer les caractères ci-dessus et de les stylisés via bootstrap
-    `
-      <button
-        class="btn btn-lg btn-primary m-2"
-        id='` + letter + `'
-        onClick="handleGuess('` + letter + `')"
-      >
-        ` + letter + `
-      </button>
-    `).join('');
 
-  document.getElementById('keyboard').innerHTML = buttonsHTML;
-  // affiche les boutons générer sur la page html
-}
+// Création des touches du claviers
+  function newButtons() {
+    // création d'une variable pour la création des touches
+    // split sépare les caractères
+    // map permet de retrouver des éléments dans leurs ordre d'insértions
+    let buttonsHTML = 'azertyuiopqsdfghjklmwxcvbn'.split('').map(letter =>
+      // Permet d'insérer les caractères ci-dessus et de les stylisés via bootstrap
+      `
+      <button
+      class="btn btn-lg btn-primary m-2"
+      id='` + letter + `'
+      onClick="handleGuess('` + letter + `')"
+      >
+      ` + letter + `
+      </button>
+      `).join('');
+      
+      document.getElementById('keyboard').innerHTML = buttonsHTML;
+      // affiche les boutons générer sur la page html
+    }
+
+    function test(e){
+      e.key=letter;
+      const x = e.key;
+    }
+  // document.addEventListener('keypress', (e)=>{
+  //   if((e.keyCode >=65 && e.keyCode<=90) || (e.keyCode >= 97 && e.keyCode <=122)){
+  //     inputCheck(e.key)
+  //   }
+  // })
+
+
+// })
 
 // Fonction motrice du jeu 
 function handleGuess(chosenLetter) {

@@ -51,6 +51,11 @@ body {
           filter: invert(100%);
 }
 
+.img_txt .img img {
+  width: 80px;
+  height: 100px;
+}
+
 .img_txt .wird {
   font-size: 25px;
   color: #BBBBBB;
@@ -135,8 +140,13 @@ footer .footer {
           justify-content: space-evenly;
 }
 
+footer .footer .social img {
+  height: 40px;
+  width: 40px;
+}
+
 footer .footer .social :hover {
-  width: 35px;
+  width: 49px;
 }
 
 footer .footer .nom {
@@ -192,6 +202,10 @@ footer .footer .nom a:hover {
   .img_txt {
     height: 100%;
   }
+  .img img {
+    width: 140px;
+    height: 175px;
+  }
 }
 
 @media screen and (min-width: 1024px) {
@@ -230,5 +244,13 @@ footer .footer .nom a:hover {
   .img_txt {
     height: 100%;
   }
+  .img_txt .img img {
+    width: 200px;
+    height: 250px;
+  }
+}
+
+.footer .nom {
+  font-size: 20px;
 }
 /*# sourceMappingURL=style.css.map */
