@@ -196,7 +196,7 @@ footer .footer .nom a:hover {
 
 @media screen and (min-width: 1024px) {
   .container h1 {
-    margin: 65px auto;
+    margin: 35px auto;
     font-size: 70px;
   }
   .text-center {
