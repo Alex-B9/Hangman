@@ -1,12 +1,10 @@
 @import url(./normalize.css);
-html {
-  height: 100vh;
-}
-
 body {
   background: #22223b;
   background: -webkit-gradient(linear, left top, left bottom, color-stop(18%, #22223b), color-stop(50%, #4a4e69), color-stop(83%, #9a8c98), to(#f2e9e4));
   background: linear-gradient(180deg, #22223b 18%, #4a4e69 50%, #9a8c98 83%, #f2e9e4 100%);
+  background-repeat: no-repeat;
+  background-size: cover;
   height: 100vh;
 }
 
@@ -22,7 +20,7 @@ body {
 }
 
 .container h1 {
-  margin: 10px 35px;
+  margin: 5px 35px;
   font-size: 35px;
   color: #8B808F;
   text-align: center;
@@ -41,6 +39,7 @@ body {
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
   gap: 1%;
+  margin: 0 10px;
   height: 35%;
 }
 
@@ -58,6 +57,7 @@ body {
 }
 
 .text-center {
+  overflow: hidden;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -85,6 +85,7 @@ body {
 .text-center .keyboard .btn {
   width: 35px;
   height: 35px;
+  font-size: 20px;
   background-color: #2C5776;
   color: #fff;
 }
@@ -123,7 +124,9 @@ body {
   text-decoration: none;
 }
 
-.footer {
+footer .footer {
+  overflow: hidden;
+  margin-bottom: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -132,30 +135,30 @@ body {
           justify-content: space-evenly;
 }
 
-.footer .social :hover {
+footer .footer .social :hover {
   width: 35px;
 }
 
-.footer .nom {
+footer .footer .nom {
   font-weight: 700;
 }
 
-.footer .nom a {
+footer .footer .nom a {
   text-decoration: none;
   color: black;
 }
 
-.footer .nom a:visited {
+footer .footer .nom a:visited {
   color: black;
 }
 
-.footer .nom a:hover {
+footer .footer .nom a:hover {
   font-size: 25px;
 }
 
 @media screen and (min-width: 786px) and (max-width: 1023px) {
   .container h1 {
-    margin: 65px auto;
+    margin: 45px auto;
     font-size: 50px;
   }
   .text-center {

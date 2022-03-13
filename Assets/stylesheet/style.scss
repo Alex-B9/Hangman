@@ -1,11 +1,13 @@
 @import url(./normalize.css);
 
-html{
-    height: 100vh;
-}
+// html{
+//     height: 100vh;
+// }
 body{
     background: rgb(34,34,59);
     background: linear-gradient(180deg, rgba(34,34,59,1) 18%, rgba(74,78,105,1) 50%, rgba(154,140,152,1) 83%, rgba(242,233,228,1) 100%);
+    background-repeat: no-repeat;
+    background-size: cover;
 
     height: 100vh;
 }
@@ -16,7 +18,7 @@ body{
     // justify-content: space-evenly;
 
     h1{
-        margin: 10px 35px;
+        margin: 5px 35px;
         font-size: 35px;
         color: #8B808F;
         text-align: center;
@@ -31,7 +33,7 @@ body{
     display: flex;
     justify-content: space-evenly;
     gap:1%;
-    // margin: auto 10px;
+    margin: 0 10px;
     height: 35%;
 
     .img{
@@ -49,27 +51,30 @@ body{
     }
 }
     .text-center{
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    // justify-content: center;
-    .btn-block{
+        // height: 600px;
+        overflow: hidden;
         display: flex;
-        justify-content: center;
-        // flex-wrap: wrap;
-    }
-    .keyboard{
-        margin: 30px 40px;
-        // display: flex;
-        // flex-wrap: wrap;
-            // justify-content: center;
-            // align-items: center;
-        // gap: 5px;
-        max-width: 390px;
+        flex-direction: column;
+        text-align: center;
+        // justify-content: center;
+        .btn-block{
+            display: flex;
+            justify-content: center;
+            // flex-wrap: wrap;
+        }
+        .keyboard{
+            margin: 30px 40px;
+            // display: flex;
+            // flex-wrap: wrap;
+                // justify-content: center;
+                // align-items: center;
+            // gap: 5px;
+            max-width: 390px;
 
         .btn{
             width: 35px;
             height: 35px;
+            font-size: 20px;
 
             background-color: #2C5776;
             color: #fff;
@@ -103,25 +108,31 @@ body{
         }
     }
 }
-.footer{
-    display: flex;
-    justify-content: space-evenly;
-    .social{
-        :hover{
-            width: 35px;
+footer{
+    // margin: 45px auto auto auto;
+    .footer{
+        overflow: hidden;
+        margin-bottom: 0;
+
+        display: flex;
+        justify-content: space-evenly;
+        .social{
+            :hover{
+                width: 35px;
+            }
         }
-    }
-    
-    .nom{
-        font-weight: 700;
-        a{
-            text-decoration: none;
-            color: black;
-            &:visited{
+        
+        .nom{
+            font-weight: 700;
+            a{
+                text-decoration: none;
                 color: black;
-            };
-            &:hover{
-                font-size: 25px;
+                &:visited{
+                    color: black;
+                };
+                &:hover{
+                    font-size: 25px;
+                }
             }
         }
     }
@@ -130,7 +141,7 @@ body{
 @media screen and (min-width: 786px) and (max-width: 1023px){
     .container{
         h1{
-            margin: 65px auto;
+            margin: 45px auto;
             font-size: 50px;
         }
     }
@@ -162,8 +173,11 @@ body{
         height: 100%;
     }
 }
-// Desktop version
+// Desktop versiongit chec
 @media screen and (min-width: 1024px){
+    // body{
+    //     height: auto;
+    // }
     .container{
         h1{
             margin: 65px auto;
