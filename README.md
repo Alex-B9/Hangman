@@ -6,7 +6,7 @@ Creation of a Hangman games
 
 ## Languages
 
-![](Assets/Images/img/HTML.svg) ![](Assets/Images/img/css.svg) ![](Assets/Images/img/css_bootstrap.svg) ![](Assets/Images/img/Sass.svg) ![](Assets/Images/img/) ![](Assets/Images/img/JavaScript.svg) ![](Assets/Images/img/GitHub.svg) ![](Assets/Images/img/Git.svg)
+![](Assets/Images/img/HTML.svg) ![](Assets/Images/img/css.svg) ![](Assets/Images/img/css_bootstrap.svg) ![](Assets/Images/img/Sass.svg) ![](Assets/Images/img/) ![](Assets/Images/img/JavaScript.svg) ![](Assets/Images/img/GitHub.svg) ![](Assets/Images/img/Git.svg) ![](Assets/Images/img/Markdown.svg)
 
 ### Collaborator
 
